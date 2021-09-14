@@ -2696,7 +2696,7 @@ if __name__=='__main__':
 			command = "rm -f "+gz_db_file
 			os.system(command)
 		else:
-			print('download error!please download from http://www.microbiome-bigdata.com/static/download/DBSCAN-SWA/db.tar.gz')
+			print('download error!please download from http://www.microbiome-bigdata.com/PHISDetector/static/download/DBSCAN-SWA/db.tar.gz')
 			sys.exit(-1)
 	
 	global strain_inf_dict,type
