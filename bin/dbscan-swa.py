@@ -2687,7 +2687,7 @@ if __name__=='__main__':
 			flag = 1
 	if flag ==0:
 		print('You are running DBSCAN-SWA first time, the database will be downloaded in %s'%database)
-		command = "wget -P %s http://www.microbiome-bigdata.com/static/download/DBSCAN-SWA/db.tar.gz"%database
+		command = "wget -c -P %s http://www.microbiome-bigdata.com/PHISDetector/static/download/DBSCAN-SWA/db.tar.gz"%database
 		os.system(command)
 		gz_db_file = os.path.join(database,'db.tar.gz')
 		if os.path.exists(gz_db_file):
@@ -2696,7 +2696,7 @@ if __name__=='__main__':
 			command = "rm -f "+gz_db_file
 			os.system(command)
 		else:
-			print('download error!please download from http://www.microbiome-bigdata.com/static/download/DBSCAN-SWA/db.tar.gz')
+			print('download error!please download from http://www.microbiome-bigdata.com/PHISDetector/static/download/DBSCAN-SWA/db.tar.gz')
 			sys.exit(-1)
 	
 	global strain_inf_dict,type
