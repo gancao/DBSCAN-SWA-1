@@ -2742,7 +2742,7 @@ if __name__=='__main__':
 			print('The evalue of homology search for virus uniprot database has been set to 1e-4')
 	else:
 		blastp_evalue = 1e-7
-	global per,idn,cov
+	global per,idn,cov, thread_num
 	if args.per:
 		per = args.per
 	else:
@@ -2756,7 +2756,7 @@ if __name__=='__main__':
 		cov = args.cov
 	else:
 		cov = 30
-	thread_num <- 10
+		
 	if args.thread_num:
 		thread_num = args.thread_num
 	else:
